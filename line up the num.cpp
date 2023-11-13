@@ -1,25 +1,26 @@
 #include <iostream>
-#include <cmath>
 
 using namespace std;
 int main(){
-    int length,A=101,B,C;
-    cin>>length;
-    int a[length];
-    int b[length];  
-    for(int i=0;i<length;i++ )
-        cin>>a[i];
-    for(int k=0;k<length;k++ ){
-        for(int i=0;i<length;i++ ){
-            if(a[i]<A){
-                B=a[i];
-                C=i;
-            }
-        }
-        b[k]=B;
-
+    int i,j,t,l;
+    cin>>l;
+    int buf[l];
+    for(int h=0;h<l;h++)
+    {
+        cin>>buf[h];
     }
-    for(int i=0;i<length;i++ )
-        cout<<b[i]<<endl;
-    return 0;
+    for(i=0; i<5; i++)
+    {
+        for(j=0; j<i; j++)
+      {
+          if(buf[i] < buf[j])
+           {
+               t=buf[i];
+               buf[i]=buf[j];
+               buf[j]=t;
+           }
+      }
+    }
+    for(int h=0;h<5;h++)
+        cout<<buf[h]<<endl;
 }
