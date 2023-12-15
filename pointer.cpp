@@ -2,14 +2,14 @@
 using namespace std;
 
 int a,b,ans;
-int text(){
+int text(a,b);{
     ans=a*b;
     return 0;
 }
 
 int main(){
     cin>>a>>b;
-    text();
+    text(a,b);
     cout<<ans;
     return 0;
 }
