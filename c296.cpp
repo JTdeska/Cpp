@@ -11,11 +11,10 @@ int main()
     for(int i=1;i<n+1;i++)
         v.push_back(i);
     for(int i=0;i<k;i++){
-        if(m1>v.size())
-            m2=m1-v.size()-1;
+        m2=m1 % v.size();
         v.erase(v.begin()+(m2-1));
     }
-    lucky=v[m1-1];
+    lucky=v[m1];
     cout<<lucky<<endl;
     return 0;
 }
