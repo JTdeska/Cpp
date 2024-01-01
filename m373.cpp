@@ -21,7 +21,7 @@ int main(){
     for(int i=0;i<k;i++){
         int o=0;
         for(int t=0;t<v3.size();t++){
-            if(v[i]==v3[t]&&v[i]<0&&o==0){
+            if(v[i]==v3[t] && v[i]<0 && o==0){
                 v3.erase(v3.begin()+t);
                 o=1;
             }
@@ -33,7 +33,7 @@ int main(){
     }
     for(int i=0;i<v2.size();i++){
         if(j<v2[i])
-            j=money;
+            j=v2[i];
     }
     cout<<j<<endl;
     return 0;
