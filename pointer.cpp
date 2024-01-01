@@ -1,7 +1,3 @@
-// ConsoleApplication2.cpp : Defines the entry point for the console application.
-//
-
-
 #include <stdio.h>
 #include <vector>
 using namespace std;
